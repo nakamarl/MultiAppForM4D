@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MultiAppForM4D</string>
-    <string name="buttonDualTimer">DualTimer</string>
-    <string name="buttonCalcRpm">CalcMotorRPM</string>
-    <string name="buttonLapTimer">LapTimer</string>
     <string name="buttonBlank">Not Implementation</string>
+    <string name="dualtimer">DualTimer</string>
+    <string name="calcrpm">CalcRPM</string>
+    <string name="laptimer">LapTimer</string>
 </resources>
