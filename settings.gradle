@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MultiAppForM4D"
 include ':app'
+include ':opencv'
