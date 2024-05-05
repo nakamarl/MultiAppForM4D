@@ -1,9 +1,15 @@
 package com.example.nakamari.multiappform4d
 
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLapTimer.setOnClickListener {
-            notImplButton(3)
+            startActivity(Intent(this, LapTimer::class.java))
         }
 
         btnCalcRpm.setOnClickListener{
