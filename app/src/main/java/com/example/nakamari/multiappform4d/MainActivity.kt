@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val button5 : Button = findViewById(R.id.button5)
 
         btnDualTimer.setOnClickListener{
-            notImplButton(2)
+            startActivity(Intent(this, DualTimer::class.java))
         }
 
         btnLapTimer.setOnClickListener {
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCalcRpm.setOnClickListener{
-            notImplButton(3)
+            startActivity(Intent(this, CalcRpm::class.java))
         }
 
         button4.setOnClickListener {

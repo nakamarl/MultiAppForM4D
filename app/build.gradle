@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 34
+    compileSdk 35
     namespace 'com.example.nakamari.multiappform4d'
     defaultConfig {
         applicationId "com.example.nakamari.multiappform4d"
@@ -28,10 +28,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    
+
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_1_8
     }
+
 
     buildFeatures {
         viewBinding true
@@ -46,6 +47,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.core:core-ktx:+'
+    implementation project(':opencv')
+    implementation project(':opencv')
     testImplementation 'junit:junit:4.+'
 
     def camerax_version = "1.1.0-beta01"

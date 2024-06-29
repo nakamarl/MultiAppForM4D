@@ -11,7 +11,8 @@
         android:theme="@style/Theme.MultiAppForM4D">
         <activity
             android:name=".LapTimer"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DualTimer"
+            android:exported="false" />
+        <activity
+            android:name=".CalcRpm"
+            android:exported="false" />
     </application>
     <uses-feature android:name="android.hardware.camera.any" />
 </manifest>
